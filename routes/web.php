@@ -10,3 +10,5 @@ Route::get('/', function () {
 Route::get('/matakuliah', [MatakuliahController::class, 'index']);
 
 Route::get('/matakuliah/{kode}', [MatakuliahController::class, 'show']);
+
+Route::view('/admin', 'admin.dashboard');
