@@ -180,7 +180,7 @@
                 <nav class="sidebar-nav">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" href="./index.html">
+                            <a class="nav-link active" href="{{ route('dashboard') }}">
                                 <i class="bi bi-speedometer2"></i>
                                 <span>Dashboard MANA ERP </span>
                             </a>
@@ -193,9 +193,9 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./analytics.html">
+                            <a class="nav-link" href="{{ route('analyst.index') }}">
                                 <i class="bi bi-graph-up"></i>
-                                <span>Analytics</span>
+                                <span>Data Analyst</span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -205,15 +205,15 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./products.html">
+                            <a class="nav-link" href="{{ route('product.index') }}">
                                 <i class="bi bi-box"></i>
-                                <span>Products</span>
+                                <span>Data Product</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./orders.html">
+                            <a class="nav-link" href="{{ route('order.index') }}">
                                 <i class="bi bi-bag-check"></i>
-                                <span>Orders</span>
+                                <span>Data Order</span>
                             </a>
                         </li>
                         <li class="nav-item">
