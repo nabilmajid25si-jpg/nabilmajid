@@ -5,6 +5,7 @@ use App\Http\Controllers\MatakuliahController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\AnalystController;
+use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -20,4 +21,5 @@ Route::prefix('admin')->group(function () {
     Route::resource('product', ProductController::class);
     Route::resource('order', OrderController::class);
     Route::resource('analyst', AnalystController::class);
+    Route::resource('user', UserController::class);
 });
