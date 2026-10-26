@@ -6,10 +6,14 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\AnalystController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AuthController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Guest
+Route::get('/', [AuthController::class, 'home'])->name('home');
+Route::get('/auth', [AuthController::class, 'showLogin'])->name('login');
+Route::post('/auth', [AuthController::class, 'login'])->name('login.process');
+Route::get('/register', [AuthController::class, 'showRegister'])->name('register');
+Route::post('/register', [AuthController::class, 'register'])->name('register.process');
 
 Route::get('/matakuliah', [MatakuliahController::class, 'index']);
 
