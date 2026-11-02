@@ -13,6 +13,7 @@
           <li><a href="{{ route('home') }}#services">Services</a></li>
           <li><a href="{{ route('home') }}#pricing">Pricing</a></li>
           <li><a href="{{ route('home') }}#contact">Contact</a></li>
+          <li><a href="{{ route('pasokan.index') }}" class="{{ request()->routeIs('pasokan.*') ? 'active' : '' }}">Pasokan</a></li>
           <li><a href="{{ route('login') }}" class="{{ request()->routeIs('login') ? 'active' : '' }}">Login</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>

@@ -33,6 +33,18 @@
                         <span>Data User</span>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ request()->routeIs('supplier.*') ? 'active' : '' }}" href="{{ route('supplier.index') }}">
+                        <i class="bi bi-truck"></i>
+                        <span>Data Supplier</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ request()->routeIs('purchase.*') ? 'active' : '' }}" href="{{ route('purchase.index') }}">
+                        <i class="bi bi-cart"></i>
+                        <span>Data Pembelian</span>
+                    </a>
+                </li>
             </ul>
         </nav>
     </div>
